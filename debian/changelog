@@ -1,0 +1,52 @@
+lua5.3 (5.3.3-1.1ubuntu2) focal; urgency=medium
+
+  * No-change rebuild for libgcc-s1 package name change.
+
+ -- Matthias Klose <doko@ubuntu.com>  Sun, 22 Mar 2020 16:48:30 +0100
+
+lua5.3 (5.3.3-1.1ubuntu1) disco; urgency=medium
+
+  * SECURITY UPDATE: use-after-free
+    - debian/patches/CVE-2019-6706.patch: fix in src/lapi.c.
+    - CVE-2019-6706
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Mon, 08 Apr 2019 15:15:14 -0300
+
+lua5.3 (5.3.3-1.1build1) disco; urgency=medium
+
+  * No-change rebuild for readline soname change.
+
+ -- Matthias Klose <doko@ubuntu.com>  Mon, 14 Jan 2019 20:01:44 +0000
+
+lua5.3 (5.3.3-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Vcs-... tags point to salsa
+  * lua5.3 now uses the alternatives system to manage /usr/bin/lua and
+    /usr/bin/luac (Closes: #863036)
+
+ -- Dima Kogan <dkogan@debian.org>  Fri, 28 Dec 2018 11:10:13 -0800
+
+lua5.3 (5.3.3-1) unstable; urgency=medium
+
+  * Imported Upstream version 5.3.3
+  * Rebase patches on top of Lua 5.3.3 release
+  * Update Vcs-* links
+  * Add myself to Uploaders
+  * Update Debian policy version (no change)
+  * Add patch to fix several invalid pointer conversions
+
+ -- Ondřej Surý <ondrej@debian.org>  Mon, 19 Dec 2016 16:05:01 +0100
+
+lua5.3 (5.3.1-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Export _IO_stdin_used in debian/version-script (see #816059).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 31 Jul 2016 20:57:11 +0200
+
+lua5.3 (5.3.1-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #775565)
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Sun, 01 Mar 2015 15:39:41 +0100
